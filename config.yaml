@@ -1,0 +1,11 @@
+proxies:
+  - name: "Hysteria VPN"
+    type: hysteria
+    server: 31.58.142.206
+    port: 41075
+    uuid: 704ae622-0219-4466-84c7-3e53cdfc2e60
+    alpn: h3
+    sni: www.bing.com
+    insecure: true
+    udp: true
+    tls: true
