@@ -5,7 +5,9 @@ proxies:
     port: 443
     uuid: 89054946-20f6-4856-a1af-9d5fe39b69c2
     security: tls
-    alpn: h3,h2
+    alpn:
+      - h3
+      - h2
     path: /88666
     encryption: none
     host: upbrpan.kfc.blue
