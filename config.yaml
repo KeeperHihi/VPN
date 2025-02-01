@@ -1,11 +1,24 @@
 proxies:
-  - name: "Hysteria VPN"
-    type: hysteria
-    server: 31.58.142.206
-    port: 41075
-    uuid: 704ae622-0219-4466-84c7-3e53cdfc2e60
-    alpn: h3
-    sni: www.bing.com
-    insecure: true
-    udp: true
-    tls: true
+  - name: "VLESS VPN"
+    type: vless
+    server: visa.cn
+    port: 443
+    uuid: 89054946-20f6-4856-a1af-9d5fe39b69c2
+    security: tls
+    alpn: h3,h2
+    path: /88666
+    encryption: none
+    host: upbrpan.kfc.blue
+    sni: upbrpan.kfc.blue
+    extra:
+      downloadSettings:
+        address: linuxdo.tencentapp.cn
+        port: 443
+        network: xhttp
+        security: tls
+        tlsSettings:
+          serverName: dowbrpan.kfc.blue
+          allowInsecure: false
+        xhttpSettings:
+          path: /88666
+          mode: auto
